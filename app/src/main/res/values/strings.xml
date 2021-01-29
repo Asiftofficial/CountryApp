@@ -18,7 +18,7 @@
     <string name="longitude">Longitude : %s</string>
     <string name="population">Population : %s</string>
     <string name="area">Area : %s</string>
-    <string name="something_wrong">Oops.. something went wrong bro</string>
+    <string name="something_wrong">Oops.. something went wrong</string>
     <string name="see_in_maps">See in Maps</string>
     <string name="search_country">Cari negara</string>
 </resources>

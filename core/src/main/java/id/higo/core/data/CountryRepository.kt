@@ -45,7 +45,7 @@ class CountryRepository(
 
     override fun getSearch(query: String): Flow<Resource<List<Country>>> {
 
-        var result: Flow<Resource<List<Country>>> = flow {
+        val result: Flow<Resource<List<Country>>> = flow {
             emit(Resource.Loading())
 
             val response = remoteDataSource.getSearch(query).first()

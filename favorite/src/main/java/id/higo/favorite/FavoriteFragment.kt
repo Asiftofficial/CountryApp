@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import id.higo.core.adapter.CountryAdapter
-import id.higo.countryapp.R
 import id.higo.countryapp.ui.detail.DetailActivity
 import id.higo.favorite.databinding.FragmentFavoriteBinding
 import org.koin.android.viewmodel.ext.android.viewModel

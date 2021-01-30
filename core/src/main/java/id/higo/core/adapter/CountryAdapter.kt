@@ -1,27 +1,21 @@
 package id.higo.core.adapter
 
-import android.content.Context
 import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.request.RequestOptions
 import com.github.twocoffeesoneteam.glidetovectoryou.GlideToVectorYou
-import com.pixplicity.sharp.Sharp
 import id.higo.core.databinding.ItemListCountryBinding
 import id.higo.core.domain.model.Country
-import id.higo.core.utils.FetchImage
-import okhttp3.*
-import java.io.IOException
+import okhttp3.OkHttpClient
 
 
 class CountryAdapter: RecyclerView.Adapter<CountryAdapter.ListViewHolder>() {
 
     private var dataList = ArrayList<Country>()
     var onItemClick: ((Country) -> Unit)? = null
-    private var okHttpClient: OkHttpClient? = null
 
     fun setData(data: List<Country>?) {
         if (data == null) return

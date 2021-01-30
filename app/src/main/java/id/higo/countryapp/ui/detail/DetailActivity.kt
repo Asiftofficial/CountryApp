@@ -1,5 +1,6 @@
 package id.higo.countryapp.ui.detail
 
+import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -8,6 +9,7 @@ import com.github.twocoffeesoneteam.glidetovectoryou.GlideToVectorYou
 import id.higo.core.domain.model.Country
 import id.higo.countryapp.R
 import id.higo.countryapp.databinding.ActivityDetailBinding
+import id.higo.countryapp.ui.maps.MapsActivity
 import org.koin.android.viewmodel.ext.android.viewModel
 
 class DetailActivity : AppCompatActivity() {
@@ -57,6 +59,12 @@ class DetailActivity : AppCompatActivity() {
                 favoriteState = !favoriteState
                 detailViewModel.setFavorite(country,favoriteState)
                 setFavoriteState(favoriteState)
+            }
+
+            binding.btnMaps.setOnClickListener {
+                val intentMap = Intent(this,MapsActivity::class.java)
+                intentMap.putExtra(MapsActivity.EXTRA_DATA,country)
+                startActivity(intentMap)
             }
 
 

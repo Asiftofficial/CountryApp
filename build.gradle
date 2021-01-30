@@ -44,6 +44,10 @@ buildscript {
     ext.okhttp_version = "4.9.0"
     ext.sharp_version = "1.1.0"
 
+    //mapbox
+    ext.mapbox_version = "9.2.0"
+    ext.mapbox_annotation_version = "0.8.0"
+
 
     repositories {
         google()

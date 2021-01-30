@@ -21,4 +21,5 @@
     <string name="something_wrong">Oops.. something went wrong</string>
     <string name="see_in_maps">See in Maps</string>
     <string name="search_country">Cari negara</string>
+    <string name="mapbox_access_token">"pk.eyJ1IjoiYXJpZmFpemluIiwiYSI6ImNrYTI2c3R1cjAwNXAzbm1zaDYyZW1ra2cifQ.okSWF0zf58rWkhoVuYjShQ"</string>
 </resources>
